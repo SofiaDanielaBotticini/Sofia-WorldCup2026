@@ -45,7 +45,7 @@ fun GruposView(
         ) {
             BackgroundImage()
             when (state) {
-                GruposState.Cargando -> Cargando() // Consigna (1)
+                GruposState.Cargando -> Cargando() // ****************** Consigna (1) ******************
                 is GruposState.Resultado -> GroupsList(grupos = state.grupos){
                     onAction(OnGrupoClick(it))
                 }
@@ -105,7 +105,7 @@ fun GroupCardView(
 @Composable
 fun BackgroundImage() {
     Image(
-        painter = painterResource(R.drawable.logo_viejo),
+        painter = painterResource(R.drawable.logo), // ****************** Consigna (2) ******************
         contentDescription = null,
         contentScale = ContentScale.Crop,
         modifier = Modifier
