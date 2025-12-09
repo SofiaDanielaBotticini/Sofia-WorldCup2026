@@ -82,7 +82,7 @@ fun GroupCardView(
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
-                text = "grupo.name",
+                text = "- ${grupo.name}", // ****************** Consigna (3) ******************
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center
