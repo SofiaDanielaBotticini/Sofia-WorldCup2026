@@ -61,7 +61,7 @@ fun DetalleView (
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color.Green,
+                    containerColor = MaterialTheme.colorScheme.primaryContainer, // // ****************** Consigna (5): es el mismo color que la pantalla principal ******************
                     titleContentColor = MaterialTheme.colorScheme.primary
                 ),
                 title = { Text(text = "Partidos") },
